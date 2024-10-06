@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> 
+    <div class="password-generator">
+    <div class="password-title">
+    <h1>Random Password Generator</h1>
+    <h2>Generate Your Password here</h2>
+   <div class="pg-fields">
+    <input type="text" name="" id="random-password" >
+    
+    <!-- <select name="password-length" id="lentgh-select">
+        <option value="8">8</option>
+        <option value="12">12</option>
+        <option value="16">16</option>
+        <option value="18">18</option>
+    </select> -->
+
+    <button id="copy-button" onclick="copyPassword()">Copy</button>
+    <div class="extra-features">
+        <div class="row" id="range-div"> 
+            <input type="range" id="length-range" min="8" max="20" step="1" value="8" oninput="updateDisplaylength()">
+            <label for="length-range"><span id="range-display-length">8</span></label>
+        </div>
+        <div class="row">
+        <input type="checkbox" name="" id="include-uppercase">
+        <label for="include-specialChar">Uppercase Letters</label>
+        <input type="checkbox" name="" id="include-lowecase">
+        <label for="include-specialChar">Lowecase Letters</label>
+        <input type="checkbox" name="" id="include-number">
+        <label for="include-specialChar">Number</label>
+    </div>
+    <div class="row">
+        <input type="checkbox" name="" id="include-symbol">
+        <label for="include-specialChar">Symbol</label>
+       
+    </div>
+   
+    </div>
+    <div class="generate-button-feild">
+    <button id="generate-button" onclick="createPassword()">Generate</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="password-strength-meter">
+  <span id="password-strength"></span>
+</div>
+<script src="script.js"></script>
+</body>
+</thml>
